@@ -1,44 +1,66 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.google.com/specimen/Yanone+Kaffeesatz?sidebar.open&selection.family=Yanone+Kaffeesatz:wght@500" rel="stylesheet">
-    <title>Портфолио Junior верстальщика</title>
-  </head>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>JS</title>
+</head>
+<body>
 
-  <body>
-    <header class="page-header">
-        <div class="container">
-      Контакты в шапке
-        </div>
-    </header>
+<div class="app">
+  <div class="box image">
+    <img
+      src="https://sun9-15.userapi.com/c858336/v858336272/1ecd43/Y7ca11_834Y.jpg"
+      alt=""
+      id="image"
+    >
 
-    <section class="hero-image">
-      <h1 class="heading">Неопознанный Сямон</h1>
-      <p>Молодой ананист</p>
-    </section>
+    <div class="input">
+      <input
+        id="img-url"
+        type="text"
+        placeholder="Введите URL картинки"
+        value="https://sun9-15.userapi.com/c858336/v858336272/1ecd43/Y7ca11_834Y.jpg"
+      >
+    </div>
+  </div>
+  <div class="box settings">
+    <div class="sliders">
+      <div class="slider">
+        <label for="grayscale">Оттенки серого</label>
+        <input type="range" min="0" max="100" value="0" id="grayscale">
+      </div>
 
-    <section class="intro">
-      <h2 class="subheading">Давайте познакомимся</h2>
-      <h3>Пара слов о себе</h3>
-      <p>Сосу хуи, играю с какахами, сру под дверь своим противникам, завышенная самооценка.</p>
-      <h3>Чем могу быть полезен</h3>
-      <p>Подрочить вам писюн, сбегать для вас за пивком, мыть унитазы от каках.</p>
-    </section>
+      <div class="slider">
+        <label for="contrast">Контраст</label>
+        <input type="range" min="50" max="200" value="100" id="contrast">
+      </div>
 
-    <section class="portfolio">
-      <h2 class="subheading">Мои работы</h2>
+      <div class="slider">
+        <label for="brightness">Яркость</label>
+        <input type="range" min="50" max="200" value="100" id="brightness">
+      </div>
 
-      <h3>Сайт ефрейтора Сямона</h3>
-      <p>Небольшой лендинг о школе для начинающих ананистов.</p>
+      <div class="slider">
+        <label for="sepia">Сепия</label>
+        <input type="range" min="0" max="100" value="0" id="sepia">
+      </div>
 
-      <h3>Блог начинающего верстальщика</h3>
-      <p>Статический блог про обучение HTML и CSS.</p>
-    </section>
+      <div class="slider">
+        <label for="saturate">Насыщенность</label>
+        <input type="range" min="0" max="200" value="100" id="saturate">
+      </div>
+    </div>
+    <div class="buttons">
+      <button class="btn" id="reset" disabled>Сбросить</button>
+    </div>
 
-    <footer class="page-footer">
-      Контакты в подвале
-    </footer>
-  </body>
+  </div>
+</div>
+    <script src="script.js"></script>
+</body>
 </html>
